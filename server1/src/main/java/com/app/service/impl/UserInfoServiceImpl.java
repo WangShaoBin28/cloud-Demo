@@ -69,7 +69,7 @@ public class UserInfoServiceImpl implements UserInfoService {
         String save2 = server2Feign.save(userInfo, 2);
 
         if (!save2.equals("ok")) {
-            throw new RuntimeException("调用失败了");
+            throw new RuntimeException("new Exception");
         }
         //本地保存
         UserInfo userInfo1 = new UserInfo();
